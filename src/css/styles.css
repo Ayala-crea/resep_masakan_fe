@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcccc;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    background-image: url('gambar/124.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran elemen */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    height: 100vh; /* Menjadikan tinggi elemen 100% dari tinggi viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna overlay untuk teks agar lebih terbaca */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#explore-recipes {
+    background-color: #ff99cc; /* Warna pink pastel */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 25px; /* Membuat sudut tombol melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan pada tombol */
+    transition: all 0.3s ease; /* Efek transisi saat tombol di-hover */
+}
+
+#explore-recipes:hover {
+    background-color: #ff66a3; /* Warna saat di-hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas saat di-hover */
+    transform: translateY(-2px); /* Efek naik saat di-hover */
+}
+
+
+#recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.recipe-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+#recipe-details {
+    padding: 20px;
+}
+
+#recipe-content {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang dengan sedikit transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Memberikan bayangan */
+    max-width: 600px; /* Lebar maksimal elemen */
+    width: 100%; /* Lebar penuh */
+    text-align: left; /* Rata kiri untuk konten */
+}
+
+footer {
+    background-color: #ffcccc;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
